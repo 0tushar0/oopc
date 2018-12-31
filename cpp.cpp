@@ -1,3 +1,4 @@
+// testing to see if C++ has same block scoping conventions as C
 #include <iostream>
 
 void fun(){

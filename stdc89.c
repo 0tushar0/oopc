@@ -1,4 +1,5 @@
 /* Compiled with C89 standard and works */
+/* C++ style comments not allowed (//) */
 #include <stdio.h>
 
 void fun(){
@@ -18,20 +19,27 @@ int main(){
 	/* can block scope at will in C	*/
 	{
 		void (*fun_ptr)(void) = &fun;
-		/* works
-		// (fun_ptr)();
+		/* 
+		
+		works
+		(fun_ptr)();
 
-		// doesn't print - compiles
-		// fun_ptr;
+		doesn't print - compiles
+		fun_ptr;
 
-		// prints
-		// printf("addr: %x\n", &fun_ptr); */
+		prints
+		printf("addr: %x\n", &fun_ptr);
+		
+		*/
+
 		fun_ptr();	/* prints Hello world - reason is C is block scoped */
 	}
 
-	fun_ptr();	/* prints fun_ptr function
-			   if not block scope, would print Hello world
-			*/
+	fun_ptr();
+	
+	/* prints fun_ptr function
+	   if not block scope, would print Hello world */
+
 	/* printf("addr: %x\n", &fun_ptr); */
 	return 0;
 }

@@ -1,3 +1,5 @@
+// compiiling with g++ version 7.3.0 to test block scoping
+// additional experimentation on code from test.c
 #include <stdio.h>
 
 void fun(){

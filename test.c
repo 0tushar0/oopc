@@ -1,3 +1,5 @@
+// original code obtained from 
+// https://www.geeksforgeeks.org/function-pointer-in-c/
 #include <stdio.h>
 
 void fun(int a){
